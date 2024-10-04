@@ -13,6 +13,8 @@ provider "aws" {
   region = "us-east-1"
 }
 
+## IAM
+
 data "aws_iam_policy_document" "assume_role" {
   statement {
     effect = "Allow"
@@ -57,6 +59,9 @@ resource "aws_iam_role_policy" "s3_access_policy" {
   policy = data.aws_iam_policy_document.s3_access.json
 }
 
+
+## LAMBDA
+
 data "archive_file" "lambda" {
   type        = "zip"
   source_file = "lambda.py"
@@ -85,6 +90,9 @@ resource "aws_lambda_permission" "bucket_lockdown_perm" {
   principal     = "config.amazonaws.com"
   statement_id  = "AllowExecutionFromConfig"
 }
+
+
+## CONFIG
 
 resource "aws_config_config_rule" "bucket_lockdown_rule" {
   name = "bucket_lockdown_rule"
