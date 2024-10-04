@@ -10,9 +10,9 @@ RUN set -ex \
     && apt-get clean -y \
     && rm -rf /var/lib/apt/lists/*
 
-WORKDIR C:/Users/mattj/Downloads/wbd-assignment
+WORKDIR C:/Users/mattj/Downloads/wbd-tech/wbd-techincal-assignment
 
-COPY ./my-web-server.py my-web-server.py
+COPY ./ex1/my-web-server.py my-web-server.py
 
 EXPOSE 8000
 
