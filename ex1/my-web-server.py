@@ -1,14 +1,15 @@
 # exercise 1
 
-import http.server
 import os
 import socketserver
 from datetime import datetime
+from http.server import BaseHTTPRequestHandler
+
 
 PORT = 8000
 
 
-class HelloHandler(http.server.BaseHTTPRequestHandler):
+class HelloHandler(BaseHTTPRequestHandler):
     def do_GET(self):
         resp = "Hello, World!\n"
 
