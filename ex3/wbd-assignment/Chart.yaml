@@ -1,0 +1,11 @@
+# exercise 3
+
+apiVersion: v2
+name: wbd-assignment
+description: A Helm chart for WBD
+
+type: application
+
+version: 0.1.0
+
+appVersion: "0.0.1"
