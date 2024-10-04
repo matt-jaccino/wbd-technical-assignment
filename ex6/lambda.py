@@ -1,9 +1,10 @@
-import botocore
 import boto3
 import json
 import datetime
 from botocore.exceptions import ClientError
 
+
+## AWS BOILERPLATE
 
 # Helper function used to validate input
 def check_defined(reference, reference_name):
@@ -148,10 +149,6 @@ def evaluate_change_notification_compliance(configuration_item, rule_parameters)
         return 'NON_COMPLIANT'
 
     return 'COMPLIANT'
-
-
-
-#### RESUME BOILERPLATE ####
 
 
 def lambda_handler(event, context):
