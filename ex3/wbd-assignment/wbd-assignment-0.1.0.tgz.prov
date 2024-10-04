@@ -1,0 +1,26 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+apiVersion: v2
+appVersion: 0.0.1
+description: A Helm chart for WBD
+name: wbd-assignment
+type: application
+version: 0.1.0
+
+...
+files:
+  wbd-assignment-0.1.0.tgz: sha256:5757c3e4ec4266e57af3ca893aaa484778d1cf497f4afc0dbbcaaec62e286e3c
+-----BEGIN PGP SIGNATURE-----
+
+wsDcBAEBCgAQBQJnAEQ4CRB4NaW1lkeJoQAAMFoMAHz/M1OSmQ4B9O3HiY/z/kaP
+7MHxSMadBeka/lUNeaNltn9dPjI0kYk75KUVqbfOUMAeMmek8UV3p98u3iTpAEzu
+OJx7VwPcdfo8MxYD6aUOIF6PZBhK5p9U5hHVmGhONkjBWUGMu5ZpZMNANCqm6B06
+uYMcIBQhtmAuAUz26vLnzRhnyAcdpw4jIO0F/oB3UyJ9umpchPICnRM1U1ytqKao
+98XKwmxENIPVJnUvG42w9nuZP6zNk7v6a38MfAv3ihFN+SEe7FJftuGs9kZODisK
+x6o3jZgPpdkf3GsdML1PPD0vtD6qnBg5zB/4DFC77mir/GPOpd4nnKlWxDTzlCKB
+vqaC7YB8rK98HM6aZFwJz2JFjiJAvGG5dXb4lbfDgwEye5DPspz8Lo4rdbEJ10+b
+SkiB6J5qqK3z7DZnbDGyImTnvgXigHZlwg0RFmN4rfZ1d/Pkott/pVYkZj2JAhTX
++oCrotTh/YT/+S2wXXlQlkuSlAyPdVMF+Bt7JyjOjg==
+=DSSz
+-----END PGP SIGNATURE-----
