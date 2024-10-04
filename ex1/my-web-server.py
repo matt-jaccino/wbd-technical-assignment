@@ -20,11 +20,15 @@ class HelloHandler(BaseHTTPRequestHandler):
 
         self.wfile.write(resp.encode())
 
-handler = HelloHandler
 
-with socketserver.TCPServer(("", PORT), handler) as server:
-    print(
-        f"{datetime.now().strftime('%F %T')} [{__file__.split(os.sep)[-1].split('.')[0]}] "
-        f"- [INFO] Webserver listening: http://{server.server_address[0]}:{PORT} "
-    )
-    server.serve_forever()
+def main():
+    with socketserver.TCPServer(("", PORT), HelloHandler) as server:
+        print(
+            f"{datetime.now().strftime('%F %T')} [{__file__.split(os.sep)[-1].split('.')[0]}] "
+            f"- [INFO] Webserver listening: http://{server.server_address[0]}:{PORT} "
+        )
+        server.serve_forever()
+
+
+if __name__ == "__main__":
+    main()
