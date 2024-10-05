@@ -16,6 +16,6 @@ COPY ./ex1/my-web-server.py my-web-server.py
 
 EXPOSE 8000
 
-CMD ["python", "my-web-server.py"]
+CMD ["python3", "my-web-server.py"]
 
 USER myuser
